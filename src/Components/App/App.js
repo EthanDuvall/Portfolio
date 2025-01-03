@@ -4,7 +4,7 @@ import gitHub from "../../Util/GitHub_Invertocat_Logo.svg"
 import insta from "../../Util/Instagram-Icon.png"
 import resume from "../../Util/text70.svg"
 import {Link, NavLink, Route, Routes} from 'react-router-dom'
-import './app.scss'
+import './App.scss'
 
 
 function App() {

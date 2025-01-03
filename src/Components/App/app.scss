@@ -1,41 +1,54 @@
-header{
-    background-color: #e6ddd6;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    h1{
-        margin:0;
-        font-size: 6vh;
-    }
-    .socials{
-        display: flex;
-        justify-content: space-evenly;
-        width: 25vh;
-        img{
-            height: 3vh;
-        }
-    }
-    .navBar{
-        font-size: 3.5vh;
-        display: flex;
-        justify-content: space-evenly;
-        width: 70vh;
-        height: 8vh;
-        a{
-            align-items: center;
-            justify-content: space-evenly;
-            display: flex;
-            color: black;
-            width: 100%;
-            height: 100%;
-            text-decoration: none;
-            background-color: #918983;
-        
-        }
-        a.active{
-            background-color: #a79077;
-        }
-    }
+@font-face {
+  font-family: "Kugile";
+  src: url("../../Util/Kugile_Demo.ttf") format("truetype");
+}
+.App {
+  width: 100%;
+  height: 100%;
 }
 
+header {
+  background-color: #e6ddd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  h1 {
+    margin: 0;
+    font-size: 6vh;
+    height: 100%;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vh;
+    img {
+      height: 4vh;
+    }
+  }
+  .navBar {
+    font-size: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vh;
+    height: 8vh;
+    a {
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      color: black;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      background-color: #918983;
+    }
+    a.active {
+      background-color: #a79077;
+    }
+  }
+}
+
+
+body {
+  font-family: "Kugile";
+}
