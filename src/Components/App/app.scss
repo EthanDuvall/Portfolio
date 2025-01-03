@@ -2,9 +2,10 @@
   font-family: "Kugile";
   src: url("../../Util/Kugile_Demo.ttf") format("truetype");
 }
-.App {
+#root,
+.App{
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 header {
@@ -34,7 +35,7 @@ header {
     height: 8vh;
     a {
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       display: flex;
       color: black;
       width: 100%;
@@ -49,6 +50,10 @@ header {
 }
 
 
-body {
-  font-family: "Kugile";
+body,
+html {
+    font-family: "Kugile";
+    color:black;
+    background-color: #c1c6c8;
+    height: 100%;
 }
