@@ -14,10 +14,9 @@ function App() {
       <h1>ED</h1>
         <div className="navBar">
           <NavLink to = "/" exact>Home</NavLink>
-          <NavLink>About</NavLink>
-          <NavLink>Services</NavLink>
-          <NavLink>Portfolio</NavLink>
-          <NavLink>Conact Me</NavLink>
+          <NavLink to = "/About">About</NavLink>
+          <NavLink to ="/Projects">Projects</NavLink>
+          <NavLink to ="/Contact">Conact</NavLink>
         </div>
         <div className="socials">
           <Link to = "https://www.linkedin.com/in/eaduvall/"><img alt="LinkedIn" src = {linkedIn} /></Link>
