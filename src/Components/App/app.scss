@@ -1,0 +1,30 @@
+header{
+    background-color: rgb(155, 100, 155);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    h1{
+        margin:0;
+        font-size: 6vh;
+    }
+    .socials{
+        display: flex;
+        justify-content: space-evenly;
+        width: 25vh;
+        img{
+            height: 3vh;
+        }
+    }
+    .navBar{
+        font-size: 3vh;
+        display: flex;
+        justify-content: space-evenly;
+        width: 60vh;
+        a{
+            text-decoration: none;
+            color: rgb(128, 168, 88);
+        }
+    }
+}
+
