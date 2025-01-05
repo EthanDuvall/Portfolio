@@ -1,0 +1,17 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-self: center;
+    margin-top: 5%;
+    h2{
+        border-bottom: solid;
+        width: fit-content;
+        padding-bottom: 2%;
+    }
+    p{
+        text-wrap:inherit;
+        font-weight: 600;
+        line-height: 2;
+    }
+}
