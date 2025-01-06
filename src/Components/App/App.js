@@ -1,5 +1,6 @@
 import Home from "../Home/Home";
-import About from "../About/About"
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 import linkedIn from "../../Util/free-linkedin-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-721962.webp"
 import gitHub from "../../Util/GitHub_Invertocat_Logo.svg"
 import insta from "../../Util/Instagram-Icon.png"
