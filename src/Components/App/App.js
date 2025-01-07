@@ -6,7 +6,7 @@ import gitHub from "../../Util/GitHub_Invertocat_Logo.svg"
 import insta from "../../Util/Instagram-Icon.png"
 import resume from "../../Util/text70.svg"
 import {Link, NavLink, Route, Routes} from 'react-router-dom'
-import './App.scss'
+import '../App/App.scss'
 
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Home/>}/>
           <Route path = "/About"  element = {<About/>}/>
+          <Route path = "/Projects" element = {<Projects/>}/>
         </Routes>
     </div>
   );
