@@ -1,7 +1,7 @@
 import "./Conact.scss"
 
 
-function Conact(){
+function Contact(){
 
 
     return(<h1>WIP</h1>)
