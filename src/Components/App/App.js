@@ -1,5 +1,6 @@
 import Home from "../Home/Home";
 import About from "../About/About";
+import Contact from "../Conact/Conact";
 import Projects from "../Projects/Projects";
 import linkedIn from "../../Util/free-linkedin-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-721962.webp"
 import gitHub from "../../Util/GitHub_Invertocat_Logo.svg"
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element = {<Home/>}/>
           <Route path = "/About"  element = {<About/>}/>
           <Route path = "/Projects" element = {<Projects/>}/>
+          <Route path = "/Contact" element = {<Contact/>}/>
         </Routes>
     </div>
   );

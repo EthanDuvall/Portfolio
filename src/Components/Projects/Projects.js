@@ -4,7 +4,7 @@ import "./Projects.scss"
 function Projects (){
 
 
-    return(<h1>hi</h1>)
+    return(<h1>WIP</h1>)
 }
 
 
