@@ -26,10 +26,7 @@ import "./Home.scss"
             </div> 
             <aside>
                 <p>Current Project:</p>
-                <p>I am developing a daily qoute app that will send a qoute at a set time based on what the user sets it too. 
-                I plan to use javascript and react native for the front end and python for the backend. 
-                Current planed features: Set multiple times to recive qoute, Upload your own qoutes, Settings for a perfered type of qoute
-                (Hopeful, Encouraging, Inspirational, Fear, Ect).</p>
+                <p>-Freelancing for outlair Ai-</p>
             </aside>
             <img alt ="pictureOfMe" />
         </div>);
