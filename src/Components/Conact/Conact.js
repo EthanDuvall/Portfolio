@@ -1,18 +1,64 @@
-import "./Conact.scss";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./Contact.scss";
 
 function Contact() {
+  const [formData, setFormData] = useState({ email: "", message: "" });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    
+    emailjs
+      .send(
+        "service_uxkb6de", 
+        "ozvU2Ku4clJegwRVA", 
+        formData,
+        "ozvU2Ku4clJegwRVA" 
+      )
+      .then(
+        () => {
+          setStatus("Message sent successfully!");
+          setFormData({ email: "", message: "" });
+        },
+        (error) => {
+          console.error("Email send error:", error);
+          setStatus("Failed to send message.");
+        }
+      );
+  };
+
   return (
-    <>
+    <div className="contact-container">
       <h1>
-        If you have any questions or would like to request a service leave a
-        message here, and ill get back to you as quickly as possibe!
+        If you have any questions or would like to request a service, leave a
+        message here, and I'll get back to you as quickly as possible!
       </h1>
-      <form>
-        <h1>WIP NOT WORKING</h1>
-        <input type = "text" placeholder="Your email" required/>
-        <input type = "text" placeholder = "Your Message" required/>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Send</button>
       </form>
-    </>
+      {status && <p>{status}</p>}
+    </div>
   );
 }
 
