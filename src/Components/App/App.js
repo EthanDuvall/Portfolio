@@ -1,6 +1,6 @@
 import Home from "../Home/Home";
 import About from "../About/About";
-import Contact from "../Conact/Conact";
+import Contact from "../Conact/Contact";
 import Projects from "../Projects/Projects";
 import linkedIn from "../../Util/free-linkedin-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-721962.webp"
 import gitHub from "../../Util/GitHub_Invertocat_Logo.svg"
@@ -19,7 +19,7 @@ function App() {
           <NavLink to = "/">Home</NavLink>
           <NavLink to = "/About">About</NavLink>
           <NavLink to ="/Projects">Projects</NavLink>
-          <NavLink to ="/Contact">Conact</NavLink>
+          <NavLink to ="/Contact">Contact</NavLink>
         </div>
         <div className="socials">
           <Link to = "https://www.linkedin.com/in/eaduvall/"><img alt="LinkedIn" src = {linkedIn} /></Link>
