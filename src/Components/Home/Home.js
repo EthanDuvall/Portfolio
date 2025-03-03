@@ -1,18 +1,9 @@
 import "./Home.scss"
-
+import photo from "../../Util/IMG_5692.jpeg"
     function Home() {
         
 
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
@@ -28,7 +19,7 @@ import "./Home.scss"
                 <p>Current Project:</p>
                 <p>-Freelancing for outlair Ai-</p>
             </aside>
-            <img alt ="pictureOfMe" />
+            <img alt ="pictureOfMe" src = {photo}  />
         </div>);
     }
 
