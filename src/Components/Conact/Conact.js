@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import "./Contact.scss";
+import emailjs from '@emailjs/browser';
+import "./Conact.scss";
 
 function Contact() {
   const [formData, setFormData] = useState({ email: "", message: "" });
@@ -17,7 +17,7 @@ function Contact() {
     emailjs
       .send(
         "service_uxkb6de", 
-        "ozvU2Ku4clJegwRVA", 
+        "template_5yc17uj", 
         formData,
         "ozvU2Ku4clJegwRVA" 
       )
@@ -35,10 +35,10 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h1>
+      <h2>
         If you have any questions or would like to request a service, leave a
         message here, and I'll get back to you as quickly as possible!
-      </h1>
+      </h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -50,7 +50,7 @@ function Contact() {
         />
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder="Message"
           value={formData.message}
           onChange={handleChange}
           required
