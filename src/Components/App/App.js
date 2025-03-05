@@ -25,7 +25,7 @@ function App() {
           <Link to = "https://www.linkedin.com/in/eaduvall/"><img alt="LinkedIn" src = {linkedIn} /></Link>
           <Link to = "https://github.com/EthanDuvall" ><img alt="GitHub" src ={gitHub}/></Link>
           <Link to = "https://www.instagram.com/eaduval/"><img alt="Instagram" src = {insta}/></Link>
-          <img alt="Resume" src = {resume} />
+          <Link to = "https://docs.google.com/document/d/1kw7IgRnHrcrzUKSJ5Taeym5fIagIuLuJziffWS-x4jg/edit?usp=sharing"><img alt="Resume" src = {resume} /></Link>
         </div>
       </header>
         <Routes>
