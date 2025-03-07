@@ -1,0 +1,52 @@
+.projects-holder {
+  display: flex;
+  flex-direction: column;
+}
+.project {
+    border:solid;
+    border-color: grey;
+    display: flex;
+  aside {
+    width: 35%;
+    padding:1%;
+  }
+  
+  h2 {
+    margin: 0;
+    border-bottom: solid;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    font-weight: 600;
+    margin: 0;
+  }
+  ul{
+    width: 45%;
+    margin:0;
+    padding:2%;
+    border-left: solid;
+  }
+  li{
+    font-weight: 600;
+}
+  a{
+    text-decoration: none;
+    color:black;
+    border:solid;
+    cursor: pointer;
+    height: 4vh;
+    width: 13vh;
+    background-color: grey;
+    align-self: center;
+    border-radius: 4%;
+    padding: 1vh;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 8vh;
+  }
+}
+.current{
+    background-color:#a79077 ;
+}
