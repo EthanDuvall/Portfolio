@@ -129,7 +129,7 @@ function Projects() {
             Explore additional playlist creation options beyond genre selection.
           </li>
         </ul>
-        <Link to="https://github.com/EthanDuvall/Playlist-Creator">
+        <Link to="https://playlist-creator.vercel.app">
           Deployed Link
         </Link>
       </div>
