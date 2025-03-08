@@ -17,7 +17,7 @@ import photo from "../../Util/IMG_5692.jpeg"
             </div> 
             <aside>
                 <p>Current Project:</p>
-                <p>-Freelancing for outlair Ai-</p>
+                <p>-Automated job tracker-</p>
             </aside>
             <img alt ="pictureOfMe" src = {photo}  />
         </div>);
