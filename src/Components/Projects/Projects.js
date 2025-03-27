@@ -16,7 +16,7 @@ function Projects() {
           Started/Starting : <ReactTimeAgo date={"03-15-2025"} locale="en-US" />
         </p>
         <h3>
-          Frontend: React + Tailwind - Backend: FastAPI - Python + MongoDB
+          Frontend: React + Tailwind - Backend: Flask - Python + PostgreSQl + AWS
         </h3>
         <p>
           A nice little web app to make the job application process eaiser in
