@@ -45,7 +45,7 @@ function Projects() {
             details or apply directly.
           </li>
         </ul>
-        <Link>Deployed Link ( WIP )</Link>
+        <Link>Link is ( WIP ) </Link>
       </div>
       <div className="project">
         <aside>
