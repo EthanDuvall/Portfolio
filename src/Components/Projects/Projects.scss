@@ -2,19 +2,31 @@ html {
   overflow-y: scroll;
 }
 .projects-holder {
-  display: flex;
-  flex-direction: column;
+ 
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto; 
+  gap: 2rem;
+  padding: 2rem;
+}
+.expanded {
+  width: 130%;
 }
 .project {
-    border:solid;
-    border-color: grey;
-    display: flex;
-    justify-content: center;
+  transition-duration: 5ms;
+  border: solid;
+  border-color: grey;
+  display: flex;
+  justify-content: space-around;
+
   aside {
-    width: 35%;
-    padding:1%;
+    width: 45%;
+    padding: 1%;
   }
-  
+  .button-holder {
+    display: flex;
+    flex-direction: column;
+  }
   h2 {
     margin: 0;
     border-bottom: solid;
@@ -26,19 +38,19 @@ html {
     font-weight: 600;
     margin: 0;
   }
-  ul{
+  ul {
     width: 45%;
-    margin:0;
-    padding:2%;
+    margin: 0;
+    padding: 2%;
     border-left: solid;
   }
-  li{
+  li {
     font-weight: 600;
-}
-  a{
+  }
+  a {
     text-decoration: none;
-    color:black;
-    border:solid;
+    color: black;
+    border: solid;
     cursor: pointer;
     height: 4vh;
     background-color: grey;
@@ -47,11 +59,11 @@ html {
     padding: 1vh;
     font-weight: 600;
     text-align: center;
-    :hover{
+    :hover {
       cursor: pointer;
     }
   }
 }
-.current{
-    background-color:#a79077 ;
+.current {
+  background-color: #a79077;
 }
