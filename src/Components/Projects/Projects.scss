@@ -2,30 +2,37 @@ html {
   overflow-y: scroll;
 }
 .projects-holder {
- 
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto; 
+  grid-auto-rows: auto;
   gap: 2rem;
   padding: 2rem;
 }
 .expanded {
-  width: 130%;
+  width: 203%;
+  .project-desc {
+    width: 35%;
+  }
 }
 .project {
   transition-duration: 5ms;
   border: solid;
   border-color: grey;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 30vh;
 
   aside {
-    width: 45%;
+    width: 70%;
     padding: 1%;
   }
   .button-holder {
+    height: 30vh;
+    align-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
   }
   h2 {
     margin: 0;
@@ -38,15 +45,7 @@ html {
     font-weight: 600;
     margin: 0;
   }
-  ul {
-    width: 45%;
-    margin: 0;
-    padding: 2%;
-    border-left: solid;
-  }
-  li {
-    font-weight: 600;
-  }
+
   a {
     text-decoration: none;
     color: black;
@@ -54,8 +53,9 @@ html {
     cursor: pointer;
     height: 4vh;
     background-color: grey;
-    align-self: center;
-    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1vh;
     font-weight: 600;
     text-align: center;
@@ -63,6 +63,16 @@ html {
       cursor: pointer;
     }
   }
+}
+.info-button {
+  cursor: pointer;
+  padding-top: 7%;
+  height: 6vh;
+  color: black;
+  border: solid;
+  background-color: grey;
+  font-size: 19px;
+  font-family: inherit;
 }
 .current {
   background-color: #a79077;
