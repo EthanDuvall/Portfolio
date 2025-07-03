@@ -1,0 +1,25 @@
+<div className={`project ${isInfo[-] ? "expanded" : ""}`}>
+  <aside className="project-desc">
+    <h2></h2>
+    <p>Time to complete</p>
+    <h3></h3>
+    <p></p>
+  </aside>
+  {isInfo[-] && (
+    <ul>
+      <h3>Current Features:</h3>
+      <h3>Planned Features:</h3>
+    </ul>
+  )}
+  <div className="button-holder">
+    <Link to="">Deployed Link</Link>
+      <button
+        className="info-button"
+        onClick={() => {
+          toggleInfo(-);
+        }}
+      >
+        {isInfo[-] ? <p>Less info</p> : <p> More Info </p>}
+      </button>
+  </div>
+</div>
