@@ -1,20 +1,34 @@
 html {
   overflow-y: scroll;
 }
+
 .projects-holder {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem;
   transition: 150ms;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
+
 .project.expanded {
   grid-row: span 2;
-  height:74.3vh
+  height: 74.3vh;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
-h3{
-  margin:0
+
+h3 {
+  margin: 0;
 }
+
 .project {
   transition-duration: 150ms;
   border: solid;
@@ -25,24 +39,52 @@ h3{
   align-self: start;
   height: 35vh;
   background-color: #e6ddd6;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
   aside {
     width: 80%;
     padding: 1%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 2%;
+    }
   }
+
   .button-holder {
     align-self: center;
     display: flex;
     width: 100%;
     justify-content: space-between;
     z-index: 1;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
+
   h2 {
     margin: 0;
     border-bottom: solid;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
+
   p {
     font-weight: 600;
     margin: 0;
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
   }
 
   a {
@@ -57,11 +99,18 @@ h3{
     padding: 1vh;
     font-weight: 600;
     text-align: center;
-    :hover {
+
+    &:hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+      padding: 0.8rem;
     }
   }
 }
+
 .info-button {
   cursor: pointer;
   color: black;
@@ -69,18 +118,34 @@ h3{
   background-color: grey;
   font-size: 19px;
   font-family: inherit;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
+
 .current {
   background-color: #a79077;
 }
-ul{
+
+ul {
   height: 30vh;
-  h3{
-    border-top:solid;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
+  h3 {
+    border-top: solid;
     padding-top: 1%;
     margin-left: -30px;
     width: 70%;
     font-size: 23px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      width: 100%;
+      font-size: 18px;
+    }
   }
-  
 }

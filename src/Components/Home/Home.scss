@@ -1,39 +1,69 @@
-.homeBody{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    height: 65%;
-    margin-top: 13%;
-    
-    img{
-        position: absolute ;
-        top:30%;
-        left:54%;
-        width: 17%;
-        border-radius: 5%;
+.homeBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 65%;
+  margin-top: 13%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0%;
+    left: 64%;
+    width: 17%;
+    border-radius: 5%;
+  }
+
+  .nameCard {
+    border-bottom: solid;
+    text-align: left;
+    padding-bottom: 1%;
+
+    h1,
+    h3 {
+      margin: 0;
     }
-    .nameCard{
-        //background-color: #a79077;
-        border-bottom: solid;
-        text-align: left;
-        
-        padding-bottom: 1%;
-        
-        h1
-        ,h3{
-            margin:0;
-        }
+  }
+
+  aside {
+    text-align: center;
+    width: 40%;
+    margin-top: 1%;
+    font-size: 2vh;
+    font-weight: 600;
+
+    p {
+      margin: 1%;
     }
-    aside{
-        text-align: center;
-        width: 40%;
-        margin-top: 1%;
-        font-size: 2vh;
-        font-weight:600;
-        p{
-            margin:1%;
-           
-        }
+  }
+
+  // Mobile adjustments only
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    margin-top: 20%;
+
+    img {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 60%;
+      max-width: 200px;
+      margin-bottom: 5%;
     }
+
+    .nameCard {
+      padding-bottom: 4%;
+      h1,
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    aside {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
 }
