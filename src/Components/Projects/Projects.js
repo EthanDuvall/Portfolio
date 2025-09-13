@@ -36,9 +36,13 @@ function Projects() {
         {isInfo[0] && (
           <ul>
             <h3>Current Features:</h3>
-            <li>There are no current features</li>
-            <h3>Planned features:</h3>
             <li>A pop up to add and select which charters you own</li>
+            <li>
+              It allows the user to slecet a character and build a team for them
+            </li>
+            <li>It displays up to 5 teams for each character</li>
+            <h3>Planned features:</h3>
+
             <li>
               Having the team options include filters to decide wich kind of
               team would you like for that current charter
@@ -58,7 +62,7 @@ function Projects() {
           </ul>
         )}
         <div className="button-holder">
-          <Link>Link is ( WIP ) </Link>
+          <Link to = "https://genshin-team-builder-three.vercel.app">Deployed Link</Link>
           <button
             className="info-button"
             onClick={() => {
