@@ -21,16 +21,14 @@ function Projects() {
       <div className={`project ${isInfo[0] ? "expanded" : ""}`}>
         <aside className="project-desc">
           <h2>Current project: Genshin Team Builder</h2>
+          <p>Time to complete: 70 Hours</p>
+          <h3>Frontend: React Backend: Springboot </h3>
           <p>
-            Started/Starting :
-            <ReactTimeAgo date={"06-01-2025"} locale="en-US" />
-          </p>
-          <h3>Frontend: React + Tailwind</h3>
-          <p>
-            A full-featured web application that allows Genshin Impact players
-            to build and evaluate teams by filtering characters based on
-            element, weapon type, and role, with real-time data fetched from the
-            Genshin Dev API and a smooth UI built in React.
+            A full-stack web application that helps players create and evaluate
+            optimized teams. Features include character filtering by element,
+            weapon type, and role, powered by a custom-built Spring Boot API.
+            The responsive React front end delivers a smooth, user-friendly
+            experience with real-time data integration.
           </p>
         </aside>
         {isInfo[0] && (
@@ -62,7 +60,9 @@ function Projects() {
           </ul>
         )}
         <div className="button-holder">
-          <Link to = "https://genshin-team-builder-three.vercel.app">Deployed Link</Link>
+          <Link to="https://genshin-team-builder-three.vercel.app">
+            Deployed Link
+          </Link>
           <button
             className="info-button"
             onClick={() => {
