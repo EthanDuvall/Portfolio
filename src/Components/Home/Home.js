@@ -17,7 +17,7 @@ import photo from "../../Util/IMG_5692.jpeg"
             </div> 
             <aside>
                 <p>Current Project:</p>
-                <p>-Genshin Team Builder-</p>
+                <p>-Restyling Spotify Playlist Maker-</p>
             </aside>
             <img alt ="pictureOfMe" src = {photo}  />
         </div>);
